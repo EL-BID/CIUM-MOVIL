@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/inicio"
+            android:checked="false"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/inicio_string" />
+
+
+        <item
+            android:id="@+id/recursos"
+            android:checked="false"
+            android:icon="@drawable/ic_event_available_black_24dp"
+            android:title="@string/recursos_string" />
+
+        <item
+            android:id="@+id/calidad"
+            android:checked="false"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/calidad_string" />
+
+<!--
+        <item
+            android:id="@+id/hallazgos"
+            android:checked="false"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="@string/hallazgos_string" />
+
+-->
+
+        <!--
+        <item
+            android:id="@+id/zona"
+            android:checked="false"
+            android:icon="@drawable/ic_aspect_ratio_black_24dp"
+            android:title="@string/zona_string" />
+
+        -->
+
+
+        <item
+            android:id="@+id/sync"
+            android:checked="false"
+            android:icon="@drawable/ic_autorenew_black_24dp"
+            android:title="@string/sync_string" />
+
+        <item
+            android:id="@+id/config"
+            android:checked="false"
+            android:icon="@drawable/ic_settings_applications_black_24dp"
+            android:title="@string/config_string" />
+
+        <!--
+
+        <item
+            android:id="@+id/manual"
+            android:checked="false"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="@string/manual_string" />
+        -->
+
+
+        <item
+            android:id="@+id/close_sesion"
+            android:checked="false"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/close_sesion_string" />
+
+
+    </group>
+</menu>

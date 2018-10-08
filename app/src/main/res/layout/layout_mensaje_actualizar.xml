@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/PrimaryColor">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle"
+            android:layout_alignParentBottom="true"
+            android:dividerPadding="5dp"
+            android:elevation="5dp" >
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView11"
+                    android:src="@drawable/ic_star_black_24dp" />
+
+                <TextView
+                    android:id="@+id/clave_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Al parecer es la primera vez que usas el CIUM en este dispositivo, para iniciar tus evaluaciones por favor descarga los catalogos de las Clues y sus referencias."
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/imageView11" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

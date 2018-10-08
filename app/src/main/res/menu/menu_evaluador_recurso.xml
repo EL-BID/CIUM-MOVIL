@@ -1,0 +1,48 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".EvaluadorRecurso">
+
+
+    <!--
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    -->
+
+    <item
+        android:id="@+id/guardar_evaluacion"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_save_white_24dp"
+        android:title="Guardar Evaluacion"/>
+
+    <item
+        android:id="@+id/cerrar_evaluacion"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_check_circle_white_24dp"
+        android:title="Cerrar Evaluacion"/>
+
+
+    <item
+        android:id="@+id/firmar_evaluacion"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/draw_free_white_24"
+        android:title="Firmar Evaluacion"/>
+
+    <item
+        android:id="@+id/transferencia"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_swap_horiz_white_24dp"
+        android:title="Transferencia"/>
+
+
+
+    <item
+        android:id="@+id/ficha_tecnica"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_error_outline_white_24dp"
+        android:title="Ficha Tecnica"/>
+</menu>

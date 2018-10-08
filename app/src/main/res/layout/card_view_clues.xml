@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_clues"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:elevation="10dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="10dp">
+
+    <RelativeLayout
+        android:id="@+id/cardBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="7dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:showDividers="end">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/status_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_domain_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/clave_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TITULO"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:layout_alignTop="@+id/status_icon"
+                    android:layout_toRightOf="@+id/status_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ubicacion_icon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_star_black" />
+
+                <TextView
+                    android:id="@+id/nombre_criterio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBTITULO"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_alignTop="@+id/ubicacion_icon"
+                    android:layout_toRightOf="@+id/ubicacion_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tipo_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBTITULO 2"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/detalle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SUBTITULO 3"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp" />
+            </RelativeLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/iron"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

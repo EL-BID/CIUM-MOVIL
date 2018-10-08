@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="0dp"
+    android:background="@color/Background">
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:id="@+id/layout_vertical"
+        android:showDividers="beginning|end">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_loading">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_clues"
+                android:src="@drawable/ic_business_white_24dp"
+                android:layout_alignParentLeft="true"
+                android:tint="@color/PrimaryColor"
+                android:tintMode="src_in"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <ImageButton
+                android:id="@+id/boton_actualizar_clues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+
+                    android:textColor="@color/Background"
+                    android:textAllCaps="false"
+                    android:src="@drawable/ic_cloud_download_black_24dp"
+                    android:tint="@color/PrimaryDarkColor"
+                    android:tintMode="src_in"
+                    android:background="@color/Background" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar_clues"
+
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catálogos"
+                android:id="@+id/titulo_actualizaciones"
+                android:layout_toRightOf="@+id/image_clues"
+                android:layout_toEndOf="@+id/image_clues"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - - - - - -"
+                android:id="@+id/text_ultima_actualiacion_clues"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/titulo_actualizaciones"
+                android:layout_toRightOf="@+id/image_clues"
+                android:layout_toLeftOf="@+id/boton_actualizar_clues"
+                android:layout_toEndOf="@+id/image_clues"/>
+
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/iron"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_recursos"
+                android:src="@drawable/ic_event_available_white_24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/naranja"
+                android:tintMode="src_in" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eval. Recursos"
+                android:id="@+id/titulo_recursos"
+                android:layout_toRightOf="@+id/image_recursos"
+                android:layout_toEndOf="@+id/image_recursos"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - - - - - -"
+                android:id="@+id/text_conteo_recursos"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/titulo_recursos"
+                android:layout_toRightOf="@+id/image_recursos"
+                android:layout_toLeftOf="@+id/boton_sincronizar_evaluaciones_recurso"
+                android:layout_toEndOf="@+id/image_recursos"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - - - - - -"
+                android:id="@+id/text_fecha_recursos"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/text_conteo_recursos"
+                android:layout_toRightOf="@+id/image_recursos"
+                android:layout_toLeftOf="@+id/boton_sincronizar_evaluaciones_recurso"
+                android:layout_toEndOf="@+id/image_recursos" />
+
+            <ImageButton
+                android:id="@+id/boton_sincronizar_evaluaciones_recurso"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/Background"
+                android:textColor="@color/Background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:textAllCaps="false"
+                android:src="@drawable/ic_cloud_upload_black_24dp"
+                android:tint="@color/PrimaryDarkColor"
+                android:tintMode="src_in" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar_recursos"
+
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/iron"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_calidad"
+                android:src="@drawable/ic_event_note_white_24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/blue"
+                android:tintMode="src_in" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eval. Procesos"
+                android:id="@+id/titulo_calidad"
+                android:layout_toRightOf="@+id/image_calidad"
+                android:layout_toEndOf="@+id/image_calidad"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - - - - - -"
+                android:id="@+id/text_conteo_calidad"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/titulo_calidad"
+                android:layout_toRightOf="@+id/image_calidad"
+                android:layout_toLeftOf="@+id/boton_sincronizar_evaluaciones_calidad"
+                android:layout_toEndOf="@+id/image_calidad"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - - - - - -"
+                android:id="@+id/text_fecha_calidad"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/text_conteo_calidad"
+                android:layout_toRightOf="@+id/image_calidad"
+                android:layout_toLeftOf="@+id/boton_sincronizar_evaluaciones_calidad"
+                android:layout_toEndOf="@+id/image_calidad"/>
+
+            <ImageButton
+                android:id="@+id/boton_sincronizar_evaluaciones_calidad"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:background="@color/Background"
+                android:textColor="@color/Background"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:tint="@color/PrimaryDarkColor"
+                android:tintMode="src_in"
+                android:src="@drawable/ic_cloud_upload_black_24dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress_bar_calidad"
+
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/iron"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp" />
+
+
+    </LinearLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>

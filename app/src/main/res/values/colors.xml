@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="PrimaryColor">#2196f3</color>
+  <color name="PrimaryDarkColor">#0D47A1</color>
+  <color name="Accent">#FF4081</color>
+  <color name="AccentColor">#FF4081</color>
+  <color name="Accent50">#FCE4EC</color>
+  <color name="Accent100">#F8BBD0</color>
+  <color name="Accent200">#F48FB1</color>
+  <color name="Accent300">#F06292</color>
+  <color name="Accent400">#EC407A</color>
+  <color name="Accent500">#D81B60</color>
+  <color name="Accent600">#C2185B</color>
+  <color name="Accent700">#AD1457</color>
+  <color name="Accent800">#880E4F</color>
+
+  <color name="Background">#ffffff</color>
+
+
+  <color name="black">#000000</color>
+  <color name="jet">#222222</color>
+  <color name="oil">#333333</color>
+  <color name="monsoon">#777777</color>
+  <color name="jumbo">#888888</color>
+  <color name="aluminum">#999999</color>
+  <color name="base">#AAAAAA</color>
+  <color name="iron">#cccccc</color>
+  <color name="white">#FFFFFF</color>
+  <color name="yellow">#f9ff32</color>
+  <color name="yellow_dark">#e9e11f</color>
+  <color name="transparente">#00000000</color>
+  <color name="naranja">#ff8018</color>
+  <color name="rojo">#ff3b19</color>
+  <color name="blue">#2b5bae</color>
+  <color name="Green500">#4caf50</color>
+
+  <color name="error_color">#ff3b19</color>
+
+
+  <color name="background">#259B24</color>
+  <color name="buttonpressed">#CCCCCC</color>
+  <color name="buttonfocus">#FFFFFF</color>
+  <color name="Blanco">#ffffff</color>
+
+
+</resources>

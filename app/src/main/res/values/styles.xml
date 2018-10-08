@@ -1,0 +1,117 @@
+<resources>
+
+
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    <item name="colorPrimary">@color/PrimaryColor</item>
+    <item name="colorPrimaryDark">@color/PrimaryDarkColor</item>
+    <item name="colorAccent">@color/AccentColor</item>
+
+    <item name="colorControlNormal">@color/iron</item>
+    <item name="colorControlActivated">@color/PrimaryDarkColor</item>
+    <!--<item name="colorControlHighlight">@color/PrimaryColor</item>-->
+    <item name="android:textColorHint">@color/PrimaryColor</item>
+
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+
+</style>
+
+
+
+<!-- Base application theme. -->
+<!--
+<style name="AppTheme.Dark" parent="Theme.AppCompat.Light.NoActionBar">
+
+    <item name="colorPrimary">#3F51B5</item>
+    <item name="colorPrimaryDark">#303F9F</item>
+    <item name="colorAccent">#FF4081</item>
+
+    <item name="android:windowBackground">@color/primary</item>
+    <item name="colorControlNormal">@color/iron</item>
+    <item name="colorControlActivated">@color/white</item>
+    <item name="colorControlHighlight">@color/white</item>
+    <item name="android:textColorHint">@color/iron</item>
+
+    <item name="colorButtonNormal">@color/primary_darker</item>
+    <item name="android:colorButtonNormal">@color/primary_darker</item>
+</style>
+-->
+
+
+
+<!--<style name="AppTheme.Dark.Dialog" parent="Theme.AppCompat.Dialog">-->
+ <!--   <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">-->
+
+
+<!--
+    <style name="TemaDialogMaterial" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorAccent">@color/PrimaryDarkColor</item>
+        <item name="android:textColorPrimary">@color/PrimaryColor</item>
+        <item name="android:background">@color/white</item>
+
+        <item name="android:textColor">@color/PrimaryDarkColor</item>
+        <item name="android:textStyle">bold</item>
+
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerDialogTheme</item>
+
+    </style>
+
+    -->
+
+    <!--
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:datePickerDialogTheme">@style/MyDatePickerStyle</item>
+    </style>-->
+
+
+    <style name="MyDatePickerStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorPrimary">@color/PrimaryColor</item>
+        <item name="colorPrimaryDark">@color/PrimaryDarkColor</item>
+
+        <item name="colorAccent">@color/PrimaryDarkColor</item>
+        <item name="android:textColorPrimary">@color/PrimaryColor</item>
+
+        <item name="android:background">@color/white</item>
+        <item name="android:headerBackground">@color/PrimaryColor</item>
+
+        <item name="android:textColor">@color/PrimaryDarkColor</item>
+        <item name="android:textStyle">bold</item>
+
+        <!--<item name="android:colorPrimary">@color/PrimaryDarkColor</item>
+        <item name="android:colorPrimaryDark">@color/PrimaryDarkColor</item>
+        <item name="android:colorAccent">@color/PrimaryColor</item>-->
+
+    </style>
+
+
+    <style name="TemaDialogMaterial" parent="Theme.AppCompat.Light.Dialog.Alert">
+
+        <item name="colorAccent">@color/PrimaryDarkColor</item>
+        <item name="android:textColorPrimary">@color/PrimaryColor</item>
+        <item name="android:background">@color/white</item>
+
+        <item name="android:textColor">@color/PrimaryDarkColor</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="dashboard_button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/boton_selector</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:drawablePadding">8dp</item>
+    </style>
+
+
+
+
+
+
+</resources>
+

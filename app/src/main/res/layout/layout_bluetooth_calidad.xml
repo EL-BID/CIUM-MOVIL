@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bluetooth">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/PrimaryColor"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_status"
+        android:layout_below="@+id/toolbar_bluetooth"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLUES"
+            android:id="@+id/text_clues"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INDICADORES"
+            android:id="@+id/text_indicadores"
+            android:layout_below="@+id/text_clues"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EXPEDIENTES"
+            android:id="@+id/text_expedientes"
+            android:layout_below="@+id/text_indicadores"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CRITERIOS"
+            android:id="@+id/text_criterios"
+            android:layout_below="@+id/text_expedientes"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginLeft="5dp" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_status"
+        android:layout_marginTop="5dp"
+        android:id="@+id/layout_sobreescribir">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobreescribir respuestas existentes"
+            android:id="@+id/text_check"
+            android:layout_toLeftOf="@+id/check_sobreescribir"
+            android:layout_alignParentBottom="false"
+            android:layout_alignBottom="@+id/check_sobreescribir"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="7dp" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/check_sobreescribir"
+            android:paddingRight="5dp" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_controls"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_sobreescribir"
+        android:layout_marginTop="5dp">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_status"
+            android:src="@drawable/ic_bluetooth_black_24dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="STATUS"
+            android:id="@+id/text_status"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toRightOf="@+id/image_status"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_loading"
+        android:layout_below="@+id/layout_controls">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_enviar"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_controls"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Evaluacion"
+            android:id="@+id/boton_enviar"
+            android:background="@color/PrimaryColor"
+            android:textColor="@color/Background"
+            android:drawableLeft="@drawable/bluetooth_send_white_24"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_discovered"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_bottom"
+        android:layout_below="@id/layout_enviar"
+        android:headerDividersEnabled="false"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/PrimaryColor" />
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/layout_update"
+            android:layout_below="@+id/list_discovered"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar dispositivos"
+                android:id="@+id/boton_actualizar"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

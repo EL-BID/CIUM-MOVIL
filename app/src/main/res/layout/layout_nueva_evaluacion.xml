@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:context=".NuevaEvaluacion"
+        android:paddingBottom="0dp"
+        android:background="@color/Background">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:id="@+id/layout_vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_nueva_recursos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_buscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="0dp"
+                android:layout_toLeftOf="@+id/boton_buscar_unidad">
+
+                <EditText android:id="@+id/input_unidad_buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Unidad médica a evaluar"
+                    android:inputType="text"
+                    android:paddingLeft="5dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/boton_buscar_unidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Buscar"
+                android:textColor="@color/Background"
+                android:background="@color/PrimaryColor"
+
+
+                android:layout_alignParentRight="true"
+
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:drawableLeft="@drawable/ic_search_white_24dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MESSAGES"
+            android:textColor="@android:color/black"
+            android:textSize="13dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_clues_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_clues_selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp" />
+
+    </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>

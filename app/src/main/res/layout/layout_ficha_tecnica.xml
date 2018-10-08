@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical">
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:showDividers="end">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle"
+            android:layout_alignParentBottom="true"
+            android:dividerPadding="5dp"
+            android:elevation="5dp" >
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView10"
+                        android:src="@drawable/ic_domain_black_24dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/label_nombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre:"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textStyle="italic"
+                        android:layout_toRightOf="@+id/imageView10"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/nombre_clues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="NOMBRE CLUES"
+                        android:textColor="@android:color/black"
+                        android:layout_below="@+id/label_nombre"
+                        android:layout_toRightOf="@+id/imageView10"
+                        android:layout_marginLeft="5dp" />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView11"
+                        android:src="@drawable/ic_star_black_24dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/label_clave"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Clave:"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textStyle="italic"
+                        android:layout_toRightOf="@+id/imageView11"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/clave_clues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CLAVE CLUES"
+                        android:textColor="@android:color/black"
+                        android:layout_toRightOf="@+id/imageView11"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/label_clave"
+                        android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageView12"
+                        android:src="@drawable/ic_place_black_24dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:id="@+id/label_ubicacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ubicación:"
+                        android:gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textStyle="italic"
+                        android:layout_toRightOf="@+id/imageView12"
+                        android:layout_marginLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/ubicacion_clues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="UBICACION CLUES"
+                        android:textColor="@android:color/black"
+                        android:layout_toRightOf="@+id/imageView12"
+                        android:layout_below="@+id/label_ubicacion"
+                        android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/ic_place_white_24dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/label_jurisdiccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jurisdicción:"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:layout_toRightOf="@+id/imageView13"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/jurisdiccion_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JURISDICCION"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/imageView13"
+                    android:layout_below="@+id/label_jurisdiccion"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView14"
+                    android:src="@drawable/ic_place_white_24dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/label_municipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Municipio:"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:layout_toRightOf="@+id/imageView14"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/municipio_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MUNICIPIO"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/imageView14"
+                    android:layout_below="@+id/label_municipio"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView15"
+                    android:src="@drawable/ic_place_white_24dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/label_localidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Localidad:"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:layout_toRightOf="@+id/imageView15"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/localidad_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LOCALIDAD"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/imageView15"
+                    android:layout_below="@+id/label_localidad"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView16"
+                    android:src="@drawable/ic_airline_seat_flat_black_24dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/label_tipologia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipologia:"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:layout_toRightOf="@+id/imageView16"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tipologia_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TIPOLOGIA CLUES"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/imageView16"
+                    android:layout_below="@+id/label_tipologia"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView17"
+                    android:src="@drawable/ic_style_black_24dp"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/label_tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo:"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"
+                    android:layout_toRightOf="@+id/imageView17"
+                    android:layout_marginLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/tipo_clues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TIPO CLUES"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/imageView17"
+                    android:layout_below="@+id/label_tipo"
+                    android:layout_marginLeft="5dp" />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="RESPONSABLE DE LA UNIDAD MÉDICA"
+                android:id="@+id/textView9"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="15dp" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="130dp"
+                android:id="@+id/image_view_firma"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/ic_border_color_black_48dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="- - "
+                android:id="@+id/text_responsable"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="NOMBRE Y FIRMA"
+                android:id="@+id/textx"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+</ScrollView>

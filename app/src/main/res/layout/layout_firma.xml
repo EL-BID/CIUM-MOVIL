@@ -1,0 +1,142 @@
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".FirmaEvaluacion">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawing_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_firma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/PrimaryColor"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <code.yoursoft.ciummovil.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:elevation="7dp">
+
+    </code.yoursoft.ciummovil.DrawingView>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/edit_nombre_responsable"
+                android:hint="Nombre del responsable"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textCapWords|textAutoComplete"
+                android:lines="1" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_email_responsable"
+                android:hint="Email del responsable"
+                android:layout_marginBottom="5dp"
+                android:inputType="textEmailAddress|textAutoComplete"
+                android:elevation="0dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:layout_marginTop="5dp"
+        android:elevation="7dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/boton_borrar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Borrar"
+                    android:background="@color/transparente"
+                android:layout_alignParentRight="false"
+                    android:layout_alignParentLeft="false"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/aluminum" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/boton_firmar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Firmar"
+                    android:background="@color/transparente"
+                    android:textColor="@color/PrimaryDarkColor"
+                    android:layout_alignParentRight="false"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical|center_horizontal" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+ 

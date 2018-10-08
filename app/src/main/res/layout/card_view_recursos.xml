@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:elevation="10dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="10dp">
+
+
+<RelativeLayout
+    android:id="@+id/cardBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp">
+
+<LinearLayout
+    android:id="@+id/background_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ContenedorTop"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ContenedorIzquierdo"
+            android:layout_weight="10"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/clave_clues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLUES"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:paddingLeft="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="0dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text_fecha_evaluacion"
+                        android:layout_toRightOf="@+id/clave_clues"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOMBRE"
+                    android:id="@+id/nombre_criterio"
+                    android:textSize="13dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JURISDICCION"
+                    android:id="@+id/jurisdiccion"
+                    android:textSize="13dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ContendeorDerecho"
+            android:layout_weight=".3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_icon"
+                android:src="@drawable/ic_check_black_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_icon2"
+                android:src="@drawable/firmar_24"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status_icon3"
+                android:layout_below="@+id/status_icon"
+                android:src="@drawable/ic_sync_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indicadores : "
+                android:id="@+id/textView8"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/text_indicadores"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Criterios : "
+                android:id="@+id/textView9"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/text_criterios"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ContendorFoother"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EVALUADOR"
+                    android:id="@+id/evaluador"
+                    android:textSize="11dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FECHA"
+                    android:id="@+id/fecha"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="5dp"
+                    android:textSize="11dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

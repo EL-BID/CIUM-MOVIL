@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FragZona"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerSelector"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+
+
+        <LinearLayout
+
+            android:id="@+id/layoutMap"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mapFragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                tools:layout="@layout/abc_activity_chooser_view" />
+
+            <!--
+
+            <com.google.android.gms.maps.MapView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mapView"
+                android:layout_below="@+id/spinnerSelector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+                -->
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    -->
+
+</RelativeLayout>

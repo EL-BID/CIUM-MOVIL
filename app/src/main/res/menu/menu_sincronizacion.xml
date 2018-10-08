@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".NuevaRecursos">
+
+
+    <!--
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+    -->
+
+    <item
+        android:id="@+id/resincronizar_recursos"
+        android:orderInCategory="100"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_cloud_upload_white_24dp"
+        android:title="Resincronizar Recursos" />
+
+    <item
+        android:id="@+id/resincronizar_procesos"
+        android:orderInCategory="102"
+        app:showAsAction="collapseActionView"
+        android:icon="@drawable/ic_cloud_upload_white_24dp"
+        android:title="Resincronizar Procesos"/>
+</menu>

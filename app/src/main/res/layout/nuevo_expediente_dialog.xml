@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_main">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText android:id="@+id/input_expediente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numero de expediente"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:id="@+id/text_message"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:textColor="@color/rojo" />
+
+</LinearLayout>

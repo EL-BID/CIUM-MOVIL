@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_total_expedientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="0dp">
+
+            <EditText android:id="@+id/input_total_expedientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total de expedientes"
+                android:inputType="text|number"
+                android:paddingLeft="5dp"
+                android:numeric="integer" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:text="Iniciar en :"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/inicia_en"
+            android:textStyle="normal|bold"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:text="Longitud de saltos : "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saltos_cada"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

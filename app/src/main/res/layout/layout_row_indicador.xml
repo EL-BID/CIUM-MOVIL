@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CODIGO"
+        android:id="@+id/text_view_codigo"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="NOMBRE INDICADOR"
+        android:id="@+id/text_view_nombre"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/iron"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp" />
+
+<!--
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:baselineAligned="false"
+        android:layout_marginTop="15dp"
+        android:elevation="7dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/boton_cancelar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Salir"
+                android:background="@color/transparente"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentLeft="false"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/aluminum" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/boton_agregar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Agregar"
+                android:background="@color/transparente"
+                android:textColor="@color/PrimaryDarkColor"
+                android:layout_alignParentRight="false"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical|center_horizontal" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    -->
+</LinearLayout>
+

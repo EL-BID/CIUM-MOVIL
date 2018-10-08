@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="code.yoursoft.ciummovil" >
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+<!--
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyBRmT6hZq6AgyYmRAhksDxSL8qXy9CYr9U" />
+      AIzaSyAxdLp3JCVwaTJqH5JDaqres9YqHieCJ0o
+-->
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyAxdLp3JCVwaTJqH5JDaqres9YqHieCJ0o" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logociumandroid"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home"
+            android:label="@string/title_home" >
+        </activity>
+        <activity
+            android:name=".NuevaEvaluacion"
+            android:label="@string/titulo_nueva_evaluacion" >
+        </activity>
+        <activity
+            android:name=".EvaluadorRecurso"
+            android:label="@string/titulo_evaluador_recurso">
+        </activity>
+        <activity
+            android:name=".EvaluadorCalidad"
+            android:label="@string/titulo_evaluador_calidad">
+        </activity>
+        <activity
+            android:name=".FirmaEvaluacion"
+            android:label="@string/titulo_panel_firma" >
+        </activity>
+
+        <activity
+            android:name=".Bluetooth"
+            android:label="@string/titulo_panel_bluetooth" >
+        </activity>
+
+        <activity
+            android:name=".BluetoothCalidad"
+            android:label="@string/titulo_panel_bluetooth" >
+        </activity>
+
+        <activity
+            android:name=".ManualUsuario"
+            android:label="@string/titulo_manual" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAxdLp3JCVwaTJqH5JDaqres9YqHieCJ0o" />
+
+
+
+    </application>
+
+</manifest>

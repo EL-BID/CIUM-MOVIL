@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/blue_background"
+    android:orientation="vertical"
+    android:id="@+id/image_">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_image"
+        android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:src="@drawable/no_profile_v3"
+    app:border_color="#FF0000"
+        android:backgroundTint="@color/AccentColor"
+        android:elevation="10dp"
+        android:foreground="@color/AccentColor"
+        android:foregroundTint="@color/AccentColor"
+        android:foregroundTintMode="multiply"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joram Roblero"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:id="@+id/username_header"
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jorpz24@gmail.com"
+        android:id="@+id/email_header"
+        android:layout_marginBottom="5dp"
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/username_header"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

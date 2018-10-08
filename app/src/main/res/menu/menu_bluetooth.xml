@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.peterleow.androidconnection.Bluetooh">
+
+
+    <item android:id="@+id/reiniciar"
+        android:title="@string/reiniciar"
+        android:icon="@drawable/ic_autorenew_white_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+
+</menu>

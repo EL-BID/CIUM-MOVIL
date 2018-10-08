@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CIUM</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Config</string>
+    <string name="title_home">CIUM </string>
+    <string name="titulo_nueva_evaluacion">Nueva Evaluación </string>
+    <string name="titulo_evaluador_recurso">Evaluacion Recursos </string>
+    <string name="titulo_evaluador_calidad">Evaluacion Procesos </string>
+    <string name="titulo_panel_firma">Firma Eval. </string>
+    <string name="titulo_manual">CIUM - Manual de Usuario </string>
+    <string name="titulo_panel_bluetooth">Sinc. Bluetooth </string>
+
+
+
+    <string name="navigation_item_1">Home</string>
+    <string name="navigation_item_2">...</string>
+    <string name="starred_string">...</string>
+
+    <string name="inicio_string">Dashboard</string>
+    <string name="recursos_string">Recursos</string>
+    <string name="calidad_string">Procesos</string>
+    <string name="hallazgos_string">Hallazgos</string>
+    <string name="zona_string">Zona</string>
+    <string name="sync_string">Sincronización</string>
+    <string name="config_string">Configuración</string>
+    <string name="manual_string">Manual Usuario</string>
+    <string name="close_sesion_string">Cerrar Sesion</string>
+    <string name="desconectar">Desconectar</string>
+    <string name="reiniciar">Reiniciar</string>
+    <string name="spam_string">...</string>
+    <string name="closeDrawer">...</string>
+    <string name="openDrawer">...</string>
+
+    <string name="boton_dash_01">Recursos</string>
+    <string name="boton_dash_02">Procesos</string>
+
+</resources>
