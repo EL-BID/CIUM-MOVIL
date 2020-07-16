@@ -6,6 +6,7 @@ Esta herramienta digital forma parte del catálogo de herramientas del **Banco I
 
   
 [![Build Status](https://travis-ci.org/joramdeveloper/CIUM-MOVIL.svg?branch=master)](https://travis-ci.org/joramdeveloper/CIUM-MOVIL)
+[![Analytics](https://gabeacon.irvinlim.com/UA-4677001-16/CIUM-MOVIL/readme?useReferer)](https://github.com/EL-BID/CIUM-MOVIL)
 
 
 ### Descripción y contexto
